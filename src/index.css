@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+@theme {
+  --font-alata: "Alata", sans-serif;
+  --font-josefin-sans: "Josefin sans", sans-serif;
+}
+
+.text-heading-1 {
+  @apply font-josefin-sans text-2xl/[1.5625rem] font-light tracking-normal md:text-7xl/[4.375rem];
+}

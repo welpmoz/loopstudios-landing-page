@@ -49,18 +49,83 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 
 ## My process
 
-### What I learn
+### What I've Learned
+
+I've set up Tailwind CSS in my Vite project. Below are the steps I followed:
+
+#### Installing Tailwind CSS
+
+1. Install Tailwind CSS using pnpm:
+
+   ```sh
+   pnpm install tailwindcss @tailwindcss/vite
+   ```
+
+2. Configure Tailwind CSS in `vite.config.ts`:
+
+   ```ts
+   import { defineConfig } from "vite";
+   import tailwindcss from "@tailwindcss/vite";
+
+   export default defineConfig({
+     plugins: [react(), tailwindcss()],
+   });
+   ```
+
+For more details, check the [Tailwind CSS Installation Guide](https://tailwindcss.com/docs/installation/using-vite).
+
+---
+
+### Configuring Prettier for Tailwind CSS
+
+To ensure Tailwind classes are formatted correctly, I configured Prettier as follows:
+
+1. Install the Tailwind CSS Prettier plugin:
+
+   ```sh
+   pnpm install -D prettier-plugin-tailwindcss
+   ```
+
+2. Update the `.prettierrc.json` file:
+   ```json
+   {
+     "plugins": ["prettier-plugin-tailwindcss"],
+     "tailwindStylesheet": "./src/index.css"
+   }
+   ```
+
+For more details, refer to the [Tailwind CSS Editor Setup Guide](https://tailwindcss.com/docs/editor-setup).
+
+---
+
+### Setting Up VS Code
+
+To ensure this setup works properly, I configured VS Code with the following steps:
+
+1. Open VS Code and press `Ctrl + Shift + P` (Windows) to open the command palette.
+   ![Command Palette](./docs/palette.png)
+
+2. Search for `User Settings (JSON)` and select the first option.
+   ![Search Settings](./docs/search.png)
+
+3. Update `settings.json` with the following configurations:
+   ```json
+   {
+     "editor.defaultFormatter": "esbenp.prettier-vscode",
+     "editor.formatOnSave": true
+   }
+   ```
+
+These settings ensure that Prettier automatically formats your code on save.
+
+And that's it!
 
 ### Built with
 
 - Semantic HTML5 markup
-- SASS
-- Accessibility
-- BEM methodology
-- CUBE CSS methodology
+- TailwindCSS
 - Git & GitHub
 - Mobile first approach
-- Github Pages
 
 ### Useful resources
 
