@@ -23,7 +23,25 @@ function App() {
             width={144}
           />
 
-          <nav>Implement navigation bar</nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Careers</a>
+              </li>
+              <li>
+                <a href="#">Events</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Support</a>
+              </li>
+            </ul>
+          </nav>
         </div>
 
         <div className="border-2 border-white p-6 pt-[1.625rem] sm:p-10 md:self-start">
