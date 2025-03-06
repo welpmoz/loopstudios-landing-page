@@ -1,0 +1,32 @@
+:root {
+  --font-alata: "Alata", sans-serif;
+  --font-josefin-sans: "Josefin sans", sans-serif;
+
+  --white: white;
+  --black: black;
+  --gray: hsl(0, 0%, 0%, 0.4994);
+}
+
+.clr-white {
+  color: var(--white);
+}
+
+.clr-black {
+  color: var(--black);
+}
+
+.clr-gray {
+  color: var(--gray);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.bg-gray {
+  background-color: var(--gray);
+}

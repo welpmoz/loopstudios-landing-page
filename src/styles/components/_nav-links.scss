@@ -1,0 +1,52 @@
+@use "../utils" as u;
+
+.Nav-links {
+  &[data-section="footer"],
+  &[data-section="overlay"] {
+    & a {
+      color: var(--white);
+    }
+  }
+
+  &[data-section="footer"],
+  &[data-section="header"] {
+    & > ul {
+      display: flex;
+      gap: 3.2rem;
+    }
+  }
+
+  &[data-section="overlay"] {
+    background-color: var(--black);
+
+    @include u.breakpoint("medium") {
+      display: none;
+    }
+
+    & > ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+  }
+
+  &[data-section="header"] {
+    display: none;
+
+    @include u.breakpoint("medium") {
+      display: block;
+    }
+  }
+
+  &[data-section="footer"] {
+    & > ul {
+      flex-direction: column;
+      gap: 1.6rem;
+
+      @include u.breakpoint("medium") {
+        flex-direction: row;
+        gap: 3.2rem;
+      }
+    }
+  }
+}
