@@ -1,0 +1,29 @@
+@use "./utils" as u;
+
+.Wrapper {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+
+  @include u.breakpoint("medium") {
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(8, 6.5rem);
+    gap: 2.4rem;
+    justify-content: center;
+  }
+
+  @include u.breakpoint("large") {
+    grid-template-columns: repeat(12, 6.5rem);
+    gap: 3.2rem;
+  }
+
+  &__child {
+    @include u.breakpoint("medium") {
+      grid-column: 1 / 9;
+    }
+
+    @include u.breakpoint("large") {
+      grid-column: 1 / 13;
+    }
+  }
+}

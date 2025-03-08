@@ -1,0 +1,110 @@
+@use "../utils" as u;
+
+.Creations {
+  display: grid;
+  gap: 3.4rem;
+  grid-template-areas:
+    "title"
+    "content"
+    "button";
+  justify-content: center;
+
+  & h2 {
+    grid-area: title;
+  }
+
+  &__grid {
+    grid-area: content;
+    margin-top: 1.4rem;
+    display: grid;
+    gap: 2.4rem;
+
+    @include u.breakpoint("medium") {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include u.breakpoint("large") {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  & button {
+    grid-area: button;
+    justify-self: center;
+    cursor: pointer;
+    padding: 1.3rem 4.3rem 1.3rem 3.8rem;
+    background-color: transparent;
+    color: var(--black);
+    border: 0.1rem solid var(--black);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--black);
+    }
+  }
+
+  &__item {
+    position: relative;
+
+    &-title {
+      position: absolute;
+      bottom: 2rem;
+      left: 2rem;
+      max-width: 9ch;
+      transition: color 0.3s ease-out;
+      z-index: 2;
+
+      @include u.breakpoint("large") {
+        bottom: 3.2rem;
+        left: 4rem;
+      }
+    }
+
+    &-image {
+      width: 100%;
+      transition: opacity 0.3s ease-out;
+    }
+
+    // Adding the gradient overlay
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        to bottom left,
+        hsla(0, 0%, 0%, 0),
+        hsla(0, 0%, 0%, 0.7)
+      );
+      pointer-events: none; // So it doesn't interfere with hover events
+      z-index: 1;
+    }
+
+    &:hover {
+      .Creations__item-title {
+        color: var(--black);
+      }
+
+      .Creations__item-image {
+        opacity: 0.3;
+      }
+
+      &::after {
+        content: unset;
+      }
+    }
+  }
+
+  @include u.breakpoint("medium") {
+    grid-template-areas:
+      "title title title button"
+      "content content content content";
+  }
+
+  @include u.breakpoint("large") {
+    justify-content: stretch;
+  }
+}

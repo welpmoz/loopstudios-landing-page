@@ -1,0 +1,63 @@
+@use "../utils" as u;
+
+.Main {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+
+  &__presentation {
+    margin-bottom: 9.6rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+
+    &-text {
+      & h2 {
+        margin-bottom: 1.6rem;
+      }
+
+      @include u.breakpoint("medium") {
+        box-sizing: content-box;
+        max-width: 43rem;
+      }
+
+      @include u.breakpoint("large") {
+        text-align: left;
+        max-width: 44.5rem;
+        padding: 0rem;
+        padding-top: 9.6rem;
+        padding-left: 9.6rem;
+        margin-left: -16.1rem;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    &-image {
+      @include u.breakpoint("large") {
+        position: relative;
+        aspect-ratio: 731 / 500;
+        width: 73.1rem;
+        z-index: -1;
+      }
+    }
+
+    @include u.breakpoint("large") {
+      margin-bottom: 18.4rem;
+      flex-direction: row;
+      gap: 0rem;
+      align-items: flex-end;
+    }
+  }
+
+  @include u.breakpoint("medium") {
+    padding-top: 12.8rem;
+    padding-bottom: 14rem;
+  }
+
+  @include u.breakpoint("large") {
+    padding-top: 16rem;
+    padding-bottom: 18.4rem;
+  }
+}

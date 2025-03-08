@@ -17,8 +17,13 @@ img {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 ul {
   list-style: none;
+}
+
+picture {
+  display: flex;
 }
