@@ -9,7 +9,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState<"open" | "close">("close");
 
   return (
-    <header className="Header clr-white">
+    <header className="Header | clr-white">
       <picture>
         <source srcSet={heroImgDesktop} media="(width >= 44.375rem)" />
         <img src={heroImgMobile} alt="" className="Header__image" />

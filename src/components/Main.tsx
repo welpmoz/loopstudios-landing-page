@@ -18,7 +18,7 @@ export default function Main() {
               height={224}
             />
           </picture>
-          <div className="Main__presentation-text bg-white text-black text-to-center">
+          <div className="Main__presentation-text | bg-white text-black text-to-center">
             <h2 className="text-heading-2 uppercase">
               the leader in interactive <abbr title="virtual reality">VR</abbr>
             </h2>

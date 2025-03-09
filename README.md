@@ -45,7 +45,7 @@ Want some support on the challenge? [Join our community](https://www.frontendmen
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/welpmoz/loopstudios-landing-page).
-- Live Site URL: In progress...
+- Live Site URL: [Live site](https://silver-dango-3d4b5f.netlify.app/)
 
 ## My process
 
@@ -120,12 +120,20 @@ These settings ensure that Prettier automatically formats your code on save.
 
 And that's it!
 
+Finally, I decided not to use Tailwind CSS for the reasons mentioned here. However, I believe this configuration might be helpful for others.
+
 ### Built with
 
 - Semantic HTML5 markup
-- TailwindCSS
+- Accessibility
 - Git & GitHub
 - Mobile first approach
+- CubeCSS
+- Sass
+- Vite
+- React
+- Typescript
+- Netlify
 
 ### Useful resources
 

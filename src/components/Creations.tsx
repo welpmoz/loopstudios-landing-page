@@ -48,7 +48,7 @@ export default function Creations() {
   return (
     <div className="Creations">
       <h2 className="text-heading-2 uppercase">our creations</h2>
-      <div className="Creations__grid clr-white text-heading-3">
+      <div className="Creations__grid | clr-white text-heading-3">
         {creations.map((creation, i) => (
           <Creation key={i} {...creation} />
         ))}
