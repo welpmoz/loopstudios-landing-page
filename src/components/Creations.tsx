@@ -72,7 +72,7 @@ function Creation({ altText, imageUrl, title }: CreationProps) {
       <picture>
         <source
           srcSet={`/images/desktop/image-${imageUrl}`}
-          media="(width >= 43.75rem)"
+          media="(width >= 44.375rem)"
         />
         <img
           className="Creations__item-image"

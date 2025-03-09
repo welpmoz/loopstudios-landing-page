@@ -9,7 +9,7 @@ export default function Main() {
       <div className="Main Wrapper__child">
         <div className="Main__presentation">
           <picture>
-            <source srcSet={vrInteractionLarge} media="(width >= 43.75rem)" />
+            <source srcSet={vrInteractionLarge} media="(width >= 44.375rem)" />
             <img
               src={vrInteractionSmall}
               alt="A human playing a virtual game"
