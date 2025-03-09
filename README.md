@@ -14,7 +14,7 @@ Thanks for checking out this front-end coding challenge.
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [What I learn](#what-i-learn)
@@ -41,6 +41,18 @@ Your users should be able to:
 Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
 ### Screenshots
+
+- Mobile
+
+![](./mobile.jpeg)
+
+- Tablet
+
+![](./tablet.jpeg)
+
+- Desktop
+
+![](./desktop.jpeg)
 
 ### Links
 
